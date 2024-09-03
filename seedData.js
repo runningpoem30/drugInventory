@@ -4,8 +4,13 @@ require('dotenv').config();
 
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
+
+//institute ka ka ek object jisme uska id and name  and uske andar ek aur object jisme you will have medicine ka info 
+
+
 const seedDrugs = async () => {
   const drugs = [
+
     {
       name: 'Aspirin',
       batchNumber: 'ASP123',
